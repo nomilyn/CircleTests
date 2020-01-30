@@ -108,6 +108,63 @@ namespace CircleTests
             //Assert
             Assert.AreEqual(expectedResult, actualResult);
         }
+        [Test]
+        public void AddToRaidius_InputInitialRadius25andNewRadius10_Results35()
+        {
+            //Arrange
+            double initialRadius = 25; double newRadius = 10; double expectedResult = 0;
+            
+            if (newRadius >= 0)
+            {
+                expectedResult = initialRadius + newRadius;
+            }
+            
+            Circle addRadius = new Circle(newRadius);
+
+            //Act
+            double actualResult = addRadius.AddToRadius(initialRadius );
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+        [Test]
+        public void AddToRaidius_InputInitialRadius5point7andNewRadius2point5_Results8point2()
+        {
+            //Arrange
+            double initialRadius = 5.7; double newRadius = 2.5; double expectedResult = 0;
+
+            if (newRadius >= 0)
+            {
+                expectedResult = initialRadius + newRadius;
+            }
+
+            Circle addRadius = new Circle(newRadius);
+
+            //Act
+            double actualResult = addRadius.AddToRadius(initialRadius);
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+        [Test]
+        public void AddToRaidius_InputInitialRadius0andNewRadius10point75_Results10point75()
+        {
+            //Arrange
+            double initialRadius = 0; double newRadius = 10.75; double expectedResult = 0;
+
+            if (newRadius >= 0)
+            {
+                expectedResult = initialRadius + newRadius;
+            }
+
+            Circle addRadius = new Circle(newRadius);
+
+            //Act
+            double actualResult = addRadius.AddToRadius(initialRadius);
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
     }
 }
 
