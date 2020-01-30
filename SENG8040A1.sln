@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SENG8040A1", "SENG8040A1\SENG8040A1.csproj", "{EF529405-541B-4718-A820-F7594765AF1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleTests", "CircleTests\CircleTests.csproj", "{5244E98F-BFE4-4FDD-A9B4-A5AEE4C5B750}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF529405-541B-4718-A820-F7594765AF1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF529405-541B-4718-A820-F7594765AF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF529405-541B-4718-A820-F7594765AF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF529405-541B-4718-A820-F7594765AF1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5244E98F-BFE4-4FDD-A9B4-A5AEE4C5B750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5244E98F-BFE4-4FDD-A9B4-A5AEE4C5B750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5244E98F-BFE4-4FDD-A9B4-A5AEE4C5B750}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5244E98F-BFE4-4FDD-A9B4-A5AEE4C5B750}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08160E75-7B5C-4DDB-B1AB-F4B97213547C}
+	EndGlobalSection
+EndGlobal
