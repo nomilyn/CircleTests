@@ -162,10 +162,7 @@ namespace CircleTests
             //Arrange
             double currentRadius = 5; double radiusToSubtract = 2; double expectedResult = 0;
 
-            //if (!(expectedResult - radiusToSubtract < 0) && radiusToSubtract >= 0)
-            //{
-                expectedResult = currentRadius - radiusToSubtract;
-            //}
+            expectedResult = currentRadius - radiusToSubtract;
 
             Circle subtractRadius = new Circle(currentRadius);
 
@@ -181,10 +178,7 @@ namespace CircleTests
             //Arrange
             double currentRadius = 10; double radiusToSubtract = 0; double expectedResult = 0;
 
-            //if (!(expectedResult - radiusToSubtract < 0) && radiusToSubtract >= 0)
-            //{
-                expectedResult = currentRadius - radiusToSubtract;
-            //}
+            expectedResult = currentRadius - radiusToSubtract;
 
             Circle subtractRadius = new Circle(currentRadius);
 
@@ -200,10 +194,7 @@ namespace CircleTests
             //Arrange
             double currentRadius = 15.75; double radiusToSubtract = 10.25; double expectedResult = 0;
 
-            //if (!(expectedResult - radiusToSubtract < 0) && radiusToSubtract >= 0)
-            //{
             expectedResult = currentRadius - radiusToSubtract;
-            //}
 
             Circle subtractRadius = new Circle(currentRadius);
 
