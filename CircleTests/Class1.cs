@@ -113,11 +113,8 @@ namespace CircleTests
         {
             //Arrange
             double initialRadius = 25; double newRadius = 10; double expectedResult = 0;
-            
-            if (newRadius >= 0)
-            {
-                expectedResult = initialRadius + newRadius;
-            }
+                       
+            expectedResult = initialRadius + newRadius;
             
             Circle addRadius = new Circle(newRadius);
 
@@ -133,11 +130,8 @@ namespace CircleTests
             //Arrange
             double initialRadius = 5.7; double newRadius = 2.5; double expectedResult = 0;
 
-            if (newRadius >= 0)
-            {
-                expectedResult = initialRadius + newRadius;
-            }
-
+            expectedResult = initialRadius + newRadius;
+            
             Circle addRadius = new Circle(newRadius);
 
             //Act
@@ -152,11 +146,8 @@ namespace CircleTests
             //Arrange
             double initialRadius = 0; double newRadius = 10.75; double expectedResult = 0;
 
-            if (newRadius >= 0)
-            {
-                expectedResult = initialRadius + newRadius;
-            }
-
+            expectedResult = initialRadius + newRadius;
+ 
             Circle addRadius = new Circle(newRadius);
 
             //Act
