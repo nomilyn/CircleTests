@@ -109,62 +109,62 @@ namespace CircleTests
             Assert.AreEqual(expectedResult, actualResult);
         }
         [Test]
-        public void AddToRaidius_InputInitialRadius25AndNewRadius10_Returns35()
+        public void AddToRaidius_Input10_Returns35()
         {
             //Arrange
-            double initialRadius = 25; double newRadius = 10; double expectedResult = 0;
+            double radius = 25; double radiusToAdd = 10; double expectedResult = 0;
                        
-            expectedResult = initialRadius + newRadius;
+            expectedResult = radius + radiusToAdd;
             
-            Circle addRadius = new Circle(newRadius);
+            Circle addRadius = new Circle(radius);
 
             //Act
-            double actualResult = addRadius.AddToRadius(initialRadius );
+            double actualResult = addRadius.AddToRadius(radiusToAdd);
 
             //Assert
             Assert.AreEqual(expectedResult, actualResult);
         }
         [Test]
-        public void AddToRaidius_InputInitialRadius5point7AndNewRadius2point5_Returns8point2()
+        public void AddToRaidius_Input2point5_Returns8point2()
         {
             //Arrange
-            double initialRadius = 5.7; double newRadius = 2.5; double expectedResult = 0;
+            double radius = 5.7; double radiusToAdd = 2.5; double expectedResult = 0;
 
-            expectedResult = initialRadius + newRadius;
+            expectedResult = radius + radiusToAdd;
             
-            Circle addRadius = new Circle(newRadius);
+            Circle addRadius = new Circle(radius);
 
             //Act
-            double actualResult = addRadius.AddToRadius(initialRadius);
+            double actualResult = addRadius.AddToRadius(radiusToAdd);
 
             //Assert
             Assert.AreEqual(expectedResult, actualResult);
         }
         [Test]
-        public void AddToRaidius_InputInitialRadius0AndNewRadius10point75_Returns10point75()
+        public void AddToRaidius_Input10point75_Returns10point75()
         {
             //Arrange
-            double initialRadius = 0; double newRadius = 10.75; double expectedResult = 0;
+            double radius = 0; double radiusToAdd = 10.75; double expectedResult = 0;
 
-            expectedResult = initialRadius + newRadius;
+            expectedResult = radius + radiusToAdd;
  
-            Circle addRadius = new Circle(newRadius);
+            Circle addRadius = new Circle(radius);
 
             //Act
-            double actualResult = addRadius.AddToRadius(initialRadius);
+            double actualResult = addRadius.AddToRadius(radiusToAdd);
 
             //Assert
             Assert.AreEqual(expectedResult, actualResult);
         }
         [Test]
-        public void SubtractFromRaidius_InputRadiusToSubtract2AndCurrentRadius5_Returns3()
+        public void SubtractFromRaidius_Input2_Returns3()
         {
             //Arrange
-            double currentRadius = 5; double radiusToSubtract = 2; double expectedResult = 0;
+            double radius = 5; double radiusToSubtract = 2; double expectedResult = 0;
 
-            expectedResult = currentRadius - radiusToSubtract;
+            expectedResult = radius - radiusToSubtract;
 
-            Circle subtractRadius = new Circle(currentRadius);
+            Circle subtractRadius = new Circle(radius);
 
             //Act
             double actualResult = subtractRadius.SubtractFromRadius(radiusToSubtract);
@@ -173,7 +173,7 @@ namespace CircleTests
             Assert.AreEqual(expectedResult, actualResult);
         }
         [Test]
-        public void SubtractFromRaidius_InputRadiusToSubtract0AndCurrentRadius10_Returns10()
+        public void SubtractFromRaidius_Input0_Returns10()
         {
             //Arrange
             double currentRadius = 10; double radiusToSubtract = 0; double expectedResult = 0;
@@ -189,14 +189,14 @@ namespace CircleTests
             Assert.AreEqual(expectedResult, actualResult);
         }
         [Test]
-        public void SubtractFromRaidius_InputRadiusToSubtra10point25AndCurrentRadius15point75_Returns5point5()
+        public void SubtractFromRaidius_Input10point25_Returns5point5()
         {
             //Arrange
-            double currentRadius = 15.75; double radiusToSubtract = 10.25; double expectedResult = 0;
+            double radius = 15.75; double radiusToSubtract = 10.25; double expectedResult = 0;
 
-            expectedResult = currentRadius - radiusToSubtract;
+            expectedResult = radius - radiusToSubtract;
 
-            Circle subtractRadius = new Circle(currentRadius);
+            Circle subtractRadius = new Circle(radius);
 
             //Act
             double actualResult = subtractRadius.SubtractFromRadius(radiusToSubtract);
@@ -206,3 +206,4 @@ namespace CircleTests
         }
     }
 }
+
